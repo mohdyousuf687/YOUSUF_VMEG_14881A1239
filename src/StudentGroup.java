@@ -46,7 +46,7 @@ public class StudentGroup implements StudentArrayOperation {
 		return null;
 		}
 		// Add your implementation here
-		return students;
+		
 	}
 
 	@Override
