@@ -36,6 +36,11 @@ public class StudentGroup implements StudentArrayOperation {
 			{
 				throw new IllegalArgumentException();
 			}
+			else
+			{
+			this.students=students
+			}
+			
 			
 		}
 		catch(Exception e)
