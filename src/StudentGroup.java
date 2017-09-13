@@ -31,6 +31,17 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void setStudents(Student[] students) {
+			try{
+			if(students==null)
+			{
+				throw new IllegalArgumentException();
+			}
+			
+		}
+		catch(Exception e)
+		{
+			System.out.print(e);
+		}
 		// Add your implementation here
 	}
 
