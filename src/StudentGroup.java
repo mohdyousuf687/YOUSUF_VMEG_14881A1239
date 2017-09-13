@@ -76,13 +76,13 @@ public class StudentGroup extends Exception implements StudentArrayOperation {
 	@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
-		 try{
+		 /*try{
 		if(index<0 || index>((this.arr).size()) || student == null)
 			throw IllegalArgumentException;
 	}
 	catch(Exception e){
 			System.out.println(e);
-	}
+	}*/
 		return (this.arr).set(index,student);
 		 
 	}
@@ -90,7 +90,7 @@ public class StudentGroup extends Exception implements StudentArrayOperation {
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
-		LinkedList<Student> ll = new LinkedList<Student>(Arrays.asList(students));
+		/*LinkedList<Student> ll = new LinkedList<Student>(Arrays.asList(students));
  		try{
 			if(student == null){
 				throw  new IllegalArgumentException();
@@ -99,7 +99,7 @@ public class StudentGroup extends Exception implements StudentArrayOperation {
 		catch(Exception e){
 			System.out.println(e);
 		}
-		ll.addFirst(student);
+		ll.addFirst(student);*/
 	}
 
 	@Override
