@@ -101,7 +101,7 @@ public class StudentGroup implements StudentArrayOperation {
 				
 			}
 			else{
-				a.add(student);
+				a.add(0,student);
 			}
 		}
 		catch(Exception e)
@@ -112,6 +112,21 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void addLast(Student student) {
+			ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
+		try{
+			if(student==null)
+			{
+				throw new IllegalArgumentException();
+				
+			}
+			else{
+				a.add(student);
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println();
+		}
 		// Add your implementation here
 	}
 
