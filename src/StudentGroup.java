@@ -63,6 +63,27 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
+		 ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
+		try{
+			if(student==null)
+			{
+				throw new IllegalArgumentException();
+				
+			}
+			else if (index<0||index>=students.length)
+			{
+				throw new IllegalArgumentException();
+			}
+			else
+			{
+				a.add(index,student);
+			}
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println();
+		}
 	}
 
 	@Override
