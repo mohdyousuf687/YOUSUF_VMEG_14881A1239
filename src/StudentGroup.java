@@ -38,7 +38,7 @@ public class StudentGroup implements StudentArrayOperation {
 			}
 			else
 			{
-			this.students=students
+			this.students=students;
 			}
 			
 			
