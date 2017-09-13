@@ -93,6 +93,21 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
+		ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
+		try{
+			if(student==null)
+			{
+				throw new IllegalArgumentException();
+				
+			}
+			else{
+				a.add(student);
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println();
+		}
 	}
 
 	@Override
