@@ -64,9 +64,12 @@ public class StudentGroup implements StudentArrayOperation {
 				throw  new IllegalArgumentException();
 			}
 		}
-		finally{
-		return null;
+		catch(Exception e)
+		{
+			System.out.println(e);
 		}
+		return students[index];
+		
 	}
 
 	@Override
