@@ -160,7 +160,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public void remove(int index) {
 		  ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
 		try{
-			if(index<0||index>=students.length)
+			if(index<0||index>=students.length){
 				throw new IllegalArgumentException();
 				
 			}
