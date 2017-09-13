@@ -140,6 +140,27 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void add(Student student, int index) {
+		  ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
+		try{
+			if(student==null)
+			{
+				throw new IllegalArgumentException();
+				
+			}
+			else if (index<0||index>=students.length)
+			{
+				throw new IllegalArgumentException();
+			}
+			else
+			{
+				a.add(index,student);
+			}
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println();
+		}
 		// Add your implementation here
 	}
 
