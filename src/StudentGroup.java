@@ -36,11 +36,6 @@ public class StudentGroup implements StudentArrayOperation {
 			{
 				throw new IllegalArgumentException();
 			}
-			else
-			{
-			this.students=students;
-			}
-			
 			
 		}
 		catch(Exception e)
@@ -64,12 +59,9 @@ public class StudentGroup implements StudentArrayOperation {
 				throw  new IllegalArgumentException();
 			}
 		}
-		catch(Exception e)
-		{
-			System.out.println(e);
+		finally{
+		return null;
 		}
-		return students[index];
-		
 	}
 
 	@Override
@@ -100,7 +92,6 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void addFirst(Student student) {
-		// Add your implementation here
 		ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
 		try{
 			if(student==null)
@@ -116,11 +107,12 @@ public class StudentGroup implements StudentArrayOperation {
 		{
 			System.out.println();
 		}
+		// Add your implementation here
 	}
 
 	@Override
 	public void addLast(Student student) {
-			ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
+		ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
 		try{
 			if(student==null)
 			{
@@ -140,6 +132,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void add(Student student, int index) {
+		// Add your implementation here
 		  ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
 		try{
 			if(student==null)
@@ -161,11 +154,31 @@ public class StudentGroup implements StudentArrayOperation {
 		{
 			System.out.println();
 		}
-		// Add your implementation here
 	}
 
 	@Override
 	public void remove(int index) {
+		  ArrayList<Student> a = new ArrayList<Student>(Arrays.asList(students));
+		try{
+			if(student==null)
+			{
+				throw new IllegalArgumentException();
+				
+			}
+			else if (index<0||index>=students.length)
+			{
+				throw new IllegalArgumentException();
+			}
+			else
+			{
+				a.remove(index);
+			}
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println();
+		}
 		// Add your implementation here
 	}
 
