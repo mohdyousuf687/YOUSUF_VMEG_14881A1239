@@ -82,8 +82,8 @@ public class StudentGroup extends Exception implements StudentArrayOperation {
 	}
 	catch(Exception e){
 			System.out.println(e);
-	}*/
-		return (this.arr).set(index,student);
+	}
+		return (this.arr).set(index,student);*/
 		 
 	}
 
